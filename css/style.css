@@ -1,0 +1,151 @@
+body{
+    padding:0px;
+    margin:0px;
+    height:40000px;
+}
+.area{
+    height:100%;
+    width:100%;
+    overflow: auto;
+}
+.box{
+    height:260px;
+    position: fixed;
+    left: 0; bottom: 0;
+    width: 100%;
+}
+.menu-box{
+    width:150px;
+    height:50px;
+    background: linear-gradient(180deg, silver, white);
+    position: fixed;
+    border-radius:10px;
+    font-family: sans-serif;
+}
+.menu{
+    width:150px;
+    height:50px;
+    background: linear-gradient(180deg, silver, white);
+    right:0px;
+    position: fixed;
+    border-radius:10px;
+    font-size: 180%;
+    font-family: sans-serif;
+}
+#start{
+    font-size: 200%;  
+    border-radius:10px; 
+    width: 150px;
+    height: 80px;
+    overflow: auto;
+    margin: auto;
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: linear-gradient(180deg, silver, white);
+}
+.finish{
+    width:100%;
+    height:10px;
+    margin-top: 500px;
+}
+.obj{
+    height:200px;
+    width:100px;
+    margin: 0px auto    ;
+}
+img{
+    height:200px;
+    width:100px;
+}
+.control{
+    width:300px;
+    margin:0px auto;
+    display:none;
+    flex-wrap:nowrap;
+    justify-content: center;
+}
+#left{
+    background: linear-gradient(180deg, silver, white);
+    font-size: 200%;  
+    border-radius:10px;  
+}
+#right{
+    background: linear-gradient(180deg, silver, white);
+    font-size: 200%;    
+    border-radius:10px;  
+}
+#shoot{ 
+    background: linear-gradient(180deg, silver, white);
+    border-radius:10px;  
+    font-size: 200%;
+}
+.astr-center{
+    height:100px;
+    width:100px;
+    margin-top:3000px;
+    margin-left:50%;
+}
+.astr-left{
+    height:100px;
+    width:100px;
+    /* background: url(../img/nlo.png); */
+    margin-top:2000px;
+    margin-left:25%;
+}
+.astr-right{
+    height:100px;
+    width:100px;
+    /* background: url(../img/nlo.png); */
+    margin-top:2000px;
+    margin-left:75%;
+}
+:root{
+    --foo: ;
+}
+@keyframes moveLeft{
+    from {
+        margin-left: var(--foo);
+    }
+    to {
+    margin-left: 25%;
+    }
+  }
+  @keyframes shoot{
+      from{
+          position:absolute;
+          top:0px;
+      }
+      to{
+        position:absolute;
+        top:-500px;
+      }
+  }
+
+  @keyframes moveRight{
+    from {
+        margin-left: var(--foo);
+    }
+    to {
+    margin-left: 75%;
+    }
+  }
+
+  @media screen and (max-width:1000px){
+    @keyframes moveRight{
+        from {
+            margin-left: var(--foo);
+        }
+        to {
+        margin-left: 65%;
+        }
+      }
+
+      @keyframes moveLeft{
+        from {
+            margin-left: var(--foo);
+        }
+        to {
+        margin-left: 10%;
+        }
+      }
+  }
